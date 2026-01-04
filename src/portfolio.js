@@ -25,7 +25,7 @@ const greeting = {
   subTitle: emoji(
     "I build scalable AI systems that solve real business problems. Currently a Master's in Data Science student at the University of Washington with a focus on Generative AI and ML Engineering."
   ),
-  resumeLink: "https://docs.google.com/document/d/1A_-8m0F_raeF8UqC3s6E3H1zE4k6f2_zZ1_w3x4/edit?usp=sharing", // Set to empty to hide the button
+  resumeLink: "https://drive.google.com/file/d/10vogWfydd6gbu41GErsrXY-LA24ScI1v/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
