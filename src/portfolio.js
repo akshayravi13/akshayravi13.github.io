@@ -229,31 +229,9 @@ const bigProjects = {
   subtitle: "SOME COOL PROJECTS I HAVE WORKED ON",
   projects: [
     {
-      image: require("./assets/images/e_commerce_logo.png"),
-      projectName: "E-Commerce Event Analytics",
-      projectDesc: "A production-grade ETL pipeline using AWS Glue and PySpark to process over 94 million e-commerce events, incremental processing via Glue bookmarks to optimize compute costs and enabling sub-second analytical queries via Athena.",
-      footerLink: [
-        {
-          name: "View on GitHub",
-          url: "https://github.com/akshayravi13"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/hey_aaron_logo.png"),
-      projectName: "Hey Aaron",
-      projectDesc: "An Android app using Picovoice for \"Hey Aaron\" wake-word detection and the Fish Audio API for custom, low-latency TTS for telling me what media is playing on my phone.",
-      footerLink: [
-        {
-          name: "View on GitHub",
-          url: "https://github.com/akshayravi13"
-        }
-      ]
-    },
-    {
       image: require("./assets/images/project_kallipolis_logo.png"), // Placeholder
       projectName: "Project Kallipolis",
-      projectDesc: "Project Kallipolis is a research simulation that utilizes LLM agents to recreate Plato's ideal city, Kallipolis, in order to investigate whether social class bias and inequality spontaneously emerge in a theoretically virtuous AI society.",
+      projectDesc: "LLM agent simulation recreating Plato's ideal city to investigate social bias and inequality emergence in theoretical AI societies.",
       footerLink: [
         {
           name: "View on GitHub",
@@ -261,11 +239,10 @@ const bigProjects = {
         }
       ]
     },
-
     {
       image: require("./assets/images/quizzatron_logo.png"), // Placeholder
       projectName: "Quizzatron",
-      projectDesc: "Generative AI-based application to generate and play dynamic quizzes based on any topic or PDF, leveraging large language models like Gemini and Deepseek.",
+      projectDesc: "Generative AI app creating dynamic quizzes from any topic or PDF using Gemini and Deepseek for interactive learning.",
       footerLink: [
         {
           name: "View on GitHub",
@@ -274,20 +251,20 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/car_brand_recommender.png"), // Placeholder
-      projectName: "Car Brand Recommender",
-      projectDesc: "Analyzed thousands of car reviews using sentiment analysis and topic modeling. Developed a recommendation system using SVM to suggest car brands.",
+      image: require("./assets/images/e_commerce_logo.png"),
+      projectName: "E-Commerce Event Analytics",
+      projectDesc: "Production-grade PySpark/Glue ETL pipeline processing 94M+ events with incremental updates for sub-second Athena analytics.",
       footerLink: [
         {
           name: "View on GitHub",
-          url: "https://github.com/akshayravi13/Car-Recommender-Using-Sentiment-Analysis-Bertopic-SVM"
+          url: "https://github.com/akshayravi13/e-commerce-analytics-pipeline-with-aws"
         }
       ]
     },
     {
-      image: require("./assets/images/fire_detection_logo.jpg"), // Placeholder
+      image: require("./assets/images/fire_detection_logo.jpg"),
       projectName: "Fire Detection",
-      projectDesc: "Trained a YOLOv4-tiny model for fire detection (36% mAP@0.50). Built inference pipelines for images, video files, and live video feeds.",
+      projectDesc: "Real-time fire detection using YOLOv4-tiny (36% mAP) with inference pipelines for images, stored videos, and live feeds.",
       footerLink: [
         {
           name: "View on GitHub",
@@ -296,9 +273,31 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/football_detection.png"), // Placeholder
+      image: require("./assets/images/hey_aaron_logo.png"),
+      projectName: "Hey Aaron",
+      projectDesc: "Android app using Picovoice for wake-word detection and Fish Audio API for low-latency custom TTS media announcements.",
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/akshayravi13/Hey-Aaron"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/car_brand_recommender.png"),
+      projectName: "Car Brand Recommender",
+      projectDesc: "Car brand recommendation system using SVM, sentiment analysis, and topic modeling on thousands of user reviews.",
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/akshayravi13/Car-Recommender-Using-Sentiment-Analysis-Bertopic-SVM"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/football_detection.png"),
       projectName: "Football Goal Detection",
-      projectDesc: "Created a dataset of football goal-line images and trained models for auto-detection using TensorFlow. Visualized feature extraction using Grad-CAM.",
+      projectDesc: "TensorFlow models for automated goal line detection with a custom dataset and Grad-CAM feature extraction visualization.",
       footerLink: [
         {
           name: "View on GitHub",
@@ -307,9 +306,9 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/content_wars_logo.png"), // Placeholder
+      image: require("./assets/images/content_wars_logo.png"),
       projectName: "Content Wars",
-      projectDesc: "Engineered interactive Tableau dashboards tailored to three distinct user personas by aggregating diverse OTT datasets via BeautifulSoup and TMDb API, providing comparative insights for casual viewers and analysts alike.",
+      projectDesc: "Interactive Tableau dashboards comparing OTT platforms via API data, offering tailored insights for diverse user personas.",
       footerLink: [
         {
           name: "View on Tableau",

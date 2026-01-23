@@ -4,19 +4,30 @@
   max-width: 100%;
   height: auto;
   width: 250px;
+  object-fit: contain;
+  /* Ensure logos don't stretch weirdly */
 }
+
 .card-title {
   color: $titleColor;
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
-  margin: 15px 0 0 0;
+  margin: 15px 0 10px 0;
 }
+
 .card-subtitle {
   color: $cardSubtitle;
   font-size: 17px;
   line-height: 1.5rem;
+  /* Line clamping for uniformity */
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 1rem;
 }
+
 .project-card {
   display: flex;
   flex-direction: column;
@@ -24,8 +35,11 @@
   padding: 1.5rem;
   border-radius: 10px;
   border: 1px solid $lightBorder1;
-  justify-content: center;
+  height: 100%;
+  /* Ensure card fills the grid cell */
+  margin-bottom: 2rem;
 }
+
 .project-card-light {
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   -webkit-transition: all 0.3s ease;
@@ -42,13 +56,32 @@
 
 .project-detail {
   text-align: center;
+  flex: 1;
+  /* Take remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Push content apart if needed, or see below */
 }
+
+/* Ensure footer (last child of detail) is pushed down if we use margin-top: auto on it, 
+   but since .project-detail is flex-col, we can just make sure content above fills space.
+   Actually, with .card-subtitle having margin-bottom, let's make .project-card-footer mt-auto */
+.project-card-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .project-card-light:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
 }
+
 .project-card-dark:hover {
   box-shadow: 0px 20px 30px -10px $darkBoxShadow;
 }
+
 .project-image {
   position: relative;
   height: 250px;
@@ -56,12 +89,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* 280px allows 4 items on 1200px+ screens */
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .project-card-footer span.project-tag {
