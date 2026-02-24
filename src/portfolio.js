@@ -343,6 +343,15 @@ const blogSection = {
   display: true // Set false to hide this section, defaults to true
 };
 
+// DeviantArt Section
+const deviantArtSection = {
+  title: "Artworks",
+  subtitle: "When I'm not writing code, I love to sketch and create art.",
+  display: true, // Set false to hide this hide section, defaults to true
+  userName: "aksart13", // Your DeviantArt Username
+  galleryId: "89247325" // Optional: Specific gallery ID to fetch from
+};
+
 // Talks Sections
 
 const talkSection = {
@@ -410,5 +419,6 @@ export {
   contactInfo,
   twitterDetails,
   isHireable,
-  resumeSection
+  resumeSection,
+  deviantArtSection
 };
