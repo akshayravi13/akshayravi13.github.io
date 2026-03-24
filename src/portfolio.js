@@ -115,7 +115,25 @@ const educationInfo = {
       subHeader: "Master of Science in Data Science",
       duration: "September 2024 - March 2026",
       desc: "GPA: 3.90",
-      descBullets: []
+      descBullets: [],
+      coursework: [
+        {
+          category: "Statistics & Probability",
+          courses: ["DATA 556: Introduction to Statistics and Probability", "DATA 557: Applied Statistics and Experimental Design"]
+        },
+        {
+          category: "Machine Learning",
+          courses: ["DATA 558: Statistical Machine Learning for Data Scientists"]
+        },
+        {
+          category: "Data Systems, Software & Algorithms",
+          courses: ["DATA 514: Data Management for Data Science", "DATA 515: Software Design for Data Science", "DATA 516: Scalable Data Systems and Algorithms"]
+        },
+        {
+          category: "Core Data Science Topics",
+          courses: ["DATA 511: Data Visualization for Data Scientists", "DATA 512: Human-Centered Data Science"]
+        }
+      ]
     },
     {
       schoolName: "Narsee Monjee Institute of Management Studies",
@@ -123,7 +141,25 @@ const educationInfo = {
       subHeader: "Bachelor of Technology in Data Science",
       duration: "July 2020 - May 2024",
       desc: "GPA: 3.71",
-      descBullets: []
+      descBullets: [],
+      coursework: [
+        {
+          category: "Data Preparation & Visualization",
+          courses: ["Data Gathering and Cleaning-ETL Process", "Data Handling and Visualization"]
+        },
+        {
+          category: "Statistics & Mathematics",
+          courses: ["Optimization Methods", "Statistical Structures in Data and Inference", "Stochastic Processes and Applications", "Applied Time Series Analysis"]
+        },
+        {
+          category: "Artificial Intelligence & Machine Learning",
+          courses: ["Applied Artificial Intelligence", "Foundations of Machine Learning", "Applications of Machine Learning", "Computer Vision and Applications", "Neural Networks and Deep Learning", "Speech and Natural Language Processing"]
+        },
+        {
+          category: "Data Systems & Analytics",
+          courses: ["Database Management System", "Introduction to Data, Signal and Image Analysis", "Advance Data Structure for Analytics", "Supply Chain and Analytics", "Big Data Analytics", "MLOps"]
+        }
+      ]
     }
   ]
 };

@@ -79,6 +79,83 @@
   margin-top: 0.5rem;
 }
 
+/* Coursework Section */
+.education-coursework {
+  margin-top: 0.8rem;
+  padding-bottom: 1rem;
+}
+
+.coursework-toggle {
+  background: none;
+  border: 1px solid $buttonColor;
+  color: $buttonColor;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: $buttonColor;
+    color: #fff;
+  }
+
+  &.dark-mode {
+    border-color: lighten($buttonColor, 20%);
+    color: lighten($buttonColor, 20%);
+
+    &:hover {
+      background: lighten($buttonColor, 20%);
+      color: #fff;
+    }
+  }
+}
+
+.coursework-content {
+  margin-top: 0.8rem;
+}
+
+.coursework-group {
+  margin-bottom: 0.8rem;
+}
+
+.coursework-category {
+  font-size: 14px;
+  font-weight: 700;
+  color: $textColor;
+  margin: 0 0 0.4rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  &.dark-mode {
+    color: $textColorDark;
+  }
+}
+
+.coursework-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.coursework-tag {
+  display: inline-block;
+  font-size: 13px;
+  padding: 0.25rem 0.7rem;
+  border-radius: 15px;
+  background: rgba(85, 25, 139, 0.1);
+  color: $textColor;
+  border: 1px solid rgba(85, 25, 139, 0.2);
+  white-space: nowrap;
+
+  &.dark-mode {
+    background: rgba(85, 25, 139, 0.25);
+    color: $textColorDark;
+    border-color: rgba(85, 25, 139, 0.4);
+  }
+}
+
 /* Media Query */
 
 @media (max-width: 1380px) {

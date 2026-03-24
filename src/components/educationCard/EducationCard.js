@@ -1,10 +1,11 @@
-import React, {createRef, useContext} from "react";
+import React, {createRef, useState, useContext} from "react";
 import {Fade, Slide} from "react-reveal";
 import "./EducationCard.scss";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function EducationCard({school}) {
   const imgRef = createRef();
+  const [showCoursework, setShowCoursework] = useState(false);
 
   const GetDescBullets = ({descBullets}) => {
     return descBullets
@@ -60,6 +61,34 @@ export default function EducationCard({school}) {
                   <GetDescBullets descBullets={school.descBullets} />
                 </ul>
               </div>
+              {school.coursework && school.coursework.length > 0 && (
+                <div className="education-coursework">
+                  <button
+                    className={`coursework-toggle ${isDark ? "dark-mode" : ""}`}
+                    onClick={() => setShowCoursework(!showCoursework)}
+                  >
+                    {showCoursework ? "Hide Coursework ▲" : "View Coursework ▼"}
+                  </button>
+                  {showCoursework && (
+                    <div className="coursework-content">
+                      {school.coursework.map((group, i) => (
+                        <div key={i} className="coursework-group">
+                          <h6 className={`coursework-category ${isDark ? "dark-mode" : ""}`}>
+                            {group.category}
+                          </h6>
+                          <div className="coursework-tags">
+                            {group.courses.map((course, j) => (
+                              <span key={j} className={`coursework-tag ${isDark ? "dark-mode" : ""}`}>
+                                {course}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              )}
             </div>
           </div>
         </div>
