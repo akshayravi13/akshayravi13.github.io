@@ -23,7 +23,7 @@ const greeting = {
   username: "Akshay Ravi",
   title: "Hi all, I'm Akshay",
   subTitle: emoji(
-    "I build scalable AI systems that solve real business problems. I recently graduated with a Master's in Data Science from the University of Washington, with a focus on Generative AI and ML Engineering."
+    "I build scalable AI systems that solve real business problems. I recently graduated with a Master's in Data Science from the University of Washington, Seattle, with a focus on Generative AI and ML Engineering."
   ),
   resumeLink: "https://drive.google.com/file/d/10vogWfydd6gbu41GErsrXY-LA24ScI1v/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -51,10 +51,10 @@ const skillsSection = {
   subTitle: "Data Scientist experienced in building autonomous data pipelines, AI agents, and business intelligence solutions",
   skills: [
     emoji(
-      "⚡ Engineering Scalable High-Speed Data Pipelines"
+      "⚡ Architecting Advanced Generative AI & RAG Agents"
     ),
     emoji(
-      "⚡ Architecting Advanced Generative AI & RAG Agents"
+      "⚡ Engineering Scalable High-Speed Data Pipelines"
     ),
     emoji(
       "⚡ Optimizing Deep Learning Models for Real-Time Performance"
@@ -69,37 +69,37 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "python",
+      skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "sql-database",
+      skillName: "SQL",
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "R",
-      fontAwesomeClassname: "fab fa-r-project"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    },
-    {
-      skillName: "git",
-      fontAwesomeClassname: "fab fa-git"
-    },
-    {
       skillName: "TensorFlow",
-      fontAwesomeClassname: "fas fa-brain" // FA doesn't have a TF logo, 'brain' is standard for ML [cite: 55, 66]
+      fontAwesomeClassname: "fas fa-brain"
     },
     {
       skillName: "Tableau/PowerBI",
-      fontAwesomeClassname: "fas fa-chart-bar" // Represents your dashboarding expertise [cite: 56, 64]
+      fontAwesomeClassname: "fas fa-chart-bar"
     },
+    {
+      skillName: "MongoDB",
+      fontAwesomeClassname: "fas fa-leaf" 
+    },
+    {
+      skillName: "AWS",
+      fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "Docker",
+      fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git"
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -167,7 +167,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Machine Learning & AI", //Insert stack or technology you have experience in
