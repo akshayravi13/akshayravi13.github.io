@@ -126,6 +126,32 @@
 
 .experience-text-details li {
   text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+/* GitHub link */
+.experience-footer {
+  margin-top: 1rem;
+}
+
+.experience-github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: $buttonColor;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: darken($buttonColor, 15%);
+    text-decoration: underline;
+  }
+
+  i {
+    font-size: 18px;
+  }
 }
 
 /* Media Query */
@@ -174,5 +200,9 @@
     padding-left: 0;
     list-style-type: none;
     /* easier for centering */
+  }
+
+  .experience-footer {
+    text-align: center;
   }
 }

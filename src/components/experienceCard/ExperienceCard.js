@@ -83,6 +83,18 @@ export default function ExperienceCard({ cardInfo, isDark }) {
         <ul>
           <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
         </ul>
+        {cardInfo.footerLink && (
+          <div className="experience-footer">
+            <a
+              className={isDark ? "experience-github-link dark-mode-text" : "experience-github-link"}
+              href={cardInfo.footerLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );

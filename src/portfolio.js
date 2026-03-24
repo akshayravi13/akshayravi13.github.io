@@ -160,10 +160,11 @@ const workExperiences = {
       companylogo: require("./assets/images/microsoft_logo.png"),
       date: "October 2025 – March 2026",
       desc: "Seattle, WA, USA",
+      footerLink: "https://github.com/akshayravi13/sequel2sql",
       descBullets: [
-        "Built an automated correction agent using RAG and Gemini 2.5 to fix erroneous PostgreSQL queries by retrieving context from official documentation and historical error patterns.",
-        "Implemented a rigorous validation loop that tests proposed fixes using the PostgreSQL EXPLAIN command within a sandbox, ensuring all outputs are syntactically valid and safe to execute.",
-        "Designed a feedback-driven system where successful repairs are automatically indexed back into the vector store, enabling the model to continuously learn and improve its accuracy over time"
+        "Architected an LLM-agnostic agentic SQL error correction system using PydanticAI, with modular tools for schema introspection, semantic error diagnosis, query rewriting, and self-evaluation; benchmarked against BIRD-CRITIC-1.0-PG across Gemini, Mistral, and DeepSeek, achieving a 5% improvement in query correction accuracy over standalone model baselines.",
+        "Designed a diversity-aware RAG retrieval engine using ChromaDB with Maximal Marginal Relevance to surface structurally distinct past fixes, paired with a multi-strategy validation pipeline combining static AST analysis and live PostgreSQL EXPLAIN feedback to catch errors that standard parsers miss.",
+        "Built an RLHF-inspired feedback loop where human-validated corrections are selectively committed back to the knowledge base, enabling the agent to specialize to a database over time without retraining and function as a continuously improving personalized SQL copilot."
       ]
     },
     {
