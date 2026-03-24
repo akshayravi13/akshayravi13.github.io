@@ -2,12 +2,16 @@ import React, { useContext } from "react";
 import { Fade } from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
-import landingPerson from "../../assets/lottie/landingPerson";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import { illustration, greeting } from "../../portfolio";
+import { greeting } from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+
+import meImg from "../../assets/images/me.jpg";
+import cherryImg from "../../assets/images/cherry_blossom.png";
+import uwImg from "../../assets/images/uw_campus_yellow.png";
+import seattleImg from "../../assets/images/seattle_skyline.png";
+import codingImg from "../../assets/images/coding_setup.png";
 
 export default function Greeting() {
   const { isDark } = useContext(StyleContext);
@@ -54,14 +58,13 @@ export default function Greeting() {
             </div>
           </div>
           <div className="greeting-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
-            ) : (
-              <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
-              ></img>
-            )}
+            <div className="collage">
+              <img className="tile top-left" src={uwImg} alt="UW campus" />
+              <img className="tile top-right" src={seattleImg} alt="Seattle skyline" />
+              <img className="tile bottom-left" src={cherryImg} alt="Cherry blossoms" />
+              <img className="tile bottom-right" src={codingImg} alt="Coding setup" />
+              <img className="center-photo" src={meImg} alt="Akshay Ravi" />
+            </div>
           </div>
         </div>
       </div>

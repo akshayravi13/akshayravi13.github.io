@@ -23,7 +23,7 @@ const greeting = {
   username: "Akshay Ravi",
   title: "Hi all, I'm Akshay",
   subTitle: emoji(
-    "I build scalable AI systems that solve real business problems. Currently a Master's in Data Science student at the University of Washington with a focus on Generative AI and ML Engineering."
+    "I build scalable AI systems that solve real business problems. I recently graduated with a Master's in Data Science from the University of Washington, with a focus on Generative AI and ML Engineering."
   ),
   resumeLink: "https://drive.google.com/file/d/10vogWfydd6gbu41GErsrXY-LA24ScI1v/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
