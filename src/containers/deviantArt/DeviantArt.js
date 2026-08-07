@@ -69,9 +69,8 @@ export default function DeviantArt() {
                         className={
                             isDark ? "dark-mode art-subtitle" : "subTitle art-subtitle"
                         }
-                    >
-                        {deviantArtSection.subtitle}
-                    </p>
+                        dangerouslySetInnerHTML={{ __html: deviantArtSection.subtitle }}
+                    ></p>
                 </div>
                 <div className="art-main-div">
                     <div className="art-text-div">

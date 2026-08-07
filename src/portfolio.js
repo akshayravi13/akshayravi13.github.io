@@ -383,7 +383,7 @@ const blogSection = {
 // DeviantArt Section
 const deviantArtSection = {
   title: "Artworks",
-  subtitle: "When I'm not writing code, I love to sketch and create art.",
+  subtitle: "When I'm not writing code, I love to sketch and create art. <a href=\"https://www.deviantart.com/aksart13\" target=\"_blank\" rel=\"noopener noreferrer\">Deviant art - aksart13</a>",
   display: true, // Set false to hide this hide section, defaults to true
   userName: "aksart13", // Your DeviantArt Username
   galleryId: "89247325" // Optional: Specific gallery ID to fetch from
