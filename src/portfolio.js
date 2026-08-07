@@ -23,7 +23,7 @@ const greeting = {
   username: "Akshay Ravi",
   title: "Hi all, I'm Akshay",
   subTitle: emoji(
-    "I build scalable AI systems that solve real business problems. I recently graduated with a Master's in Data Science from the University of Washington, Seattle, with a focus on Generative AI and ML Engineering."
+    "I build systems that solve real business problems. I recently graduated with my Master's in Data Science from the University of Washington, Seattle. I'm now working at ASML, playing with photolithography data!"
   ),
   resumeLink: "https://drive.google.com/file/d/10vogWfydd6gbu41GErsrXY-LA24ScI1v/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -190,6 +190,17 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
+    {
+      role: "Application Engineer",
+      company: "ASML",
+      companylogo: require("./assets/images/asml_logo.png"),
+      date: "July 2026 – Present",
+      desc: "Hillsboro, OR, USA",
+      descBullets: [
+        "Working with the on-product performance team",
+        "Supporting data analysis and building specialized solutions for the customer."
+      ]
+    },
     {
       role: "Data Science Capstone Project - UW MSDS",
       company: "Microsoft",
@@ -425,7 +436,6 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+1 (206) 837-3900",
   email_address: "akshayravi13@gmail.com"
 };
 
